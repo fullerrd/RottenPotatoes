@@ -1,0 +1,10 @@
+%h1 Here is a list of titles
+%table#movies
+  %thead
+    %tr
+      %th Movie Title
+  %tbody
+  	- @movies.each do |movie|
+      %tr
+    	%td= movie.title
+= link_to "Back to movies", index_movie_path

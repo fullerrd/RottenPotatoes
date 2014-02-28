@@ -6,8 +6,18 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
   end
 
+  def show2
+    id = params[:id] # retrieve movie ID from URI route
+    @movie = Movie.find(id) # look up movie by unique ID
+    # will render app/views/movies/show.<extension> by default
+  end
+
   def index
     @movies = Movie.all
+  end
+
+  def titles
+    # @movies = Movie.all
   end
 
   def new

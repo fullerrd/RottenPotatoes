@@ -11,6 +11,7 @@ group :development, :test do
   # if you already have a 'group :development,:test' block in your
   # Gemfile, you can just move the line "gem 'sqlite3'" into it.
   gem 'sqlite3' # use SQLite only in development and testing
+  gem 'debugger'
 end 
 group :production do
   gem 'pg' # use PostgreSQL in production (Heroku)
